@@ -5,17 +5,153 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beginning</title>
-
+    <title>Audrey Garcia | Aide Administrative</title>
+    <meta name="description" content="Audrey Garcia | Aide Administrative">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js" type="module"></script>
 </head>
 
 <body>
     <header class="header">
-        <h1 class="header__heading">Beginning</h1>
+        <a href="#accueil"><img class="header__logo" src="./img/logo/logotype-04.png" alt="logo"></a>
+        <div class="social">
+            <a class="social__link" href="https://www.linkedin.com/in/audrey-garcia-19578163/">
+                <i class="social__icon fa-brands fa-linkedin"></i>
+            </a>
+            <a class="social__link" href="mailto:audrey.garcia.pro@outlook.com">
+                <i class="social__icon fa-solid fa-envelope"></i>
+            </a>
+            <a class="social__link" href="https://www.facebook.com/elegante.cerise">
+                <i class="social__icon fa-brands fa-facebook"></i>
+            </a>
+            <a href="tel:+33652841013">
+                <i class="social__icon fa-solid fa-phone"></i>
+            </a>
+        </div>
+        <nav class="nav">
+            <a class="nav__link" data-nav="accueil" href="#accueil">Accueil</a>
+            <a class="nav__link" data-nav="presentation" href="#presentation">Présentation</a>
+            <a class="nav__link" data-nav="tarifs" href="#tarifs">Tarifs</a>
+        </nav>
+
+        <!-- BTN TOGGLE -->
+        <button class="btn-toggle" aria-label="toggle curtain navigation">
+            <span class="btn-toggle__line l1"></span>
+            <span class="btn-toggle__line l2"></span>
+            <span class="btn-toggle__line l3"></span>
+        </button>
     </header>
 
+    <!-- NAV SLIDER -->
+    <nav class="nav-slider">
+        <div class="nav-slider__icons">
+            <img id="iconJ" class="nav-slider__img" src="./img/logo/logotype-05.png" alt="logo" height="80">
+        </div>
+
+        <p class="nav-slider__p">Audrey Garcia<br>Aide Administrative</p>
+        <a class="nav-slider__link" href="#accueil">Accueil</a>
+        <a class="nav-slider__link" href="#presentation">Présentation</a>
+        <a class="nav-slider__link" href="#tarifs">Tarifs</a>
+        <div class="social">
+            <a class="social__link" href="https://www.linkedin.com/in/audrey-garcia-19578163/">
+                <i class="social__icon fa-brands fa-linkedin"></i>
+            </a>
+            <a class="social__link" href="mailto:audrey.garcia.pro@outlook.com">
+                <i class="social__icon fa-solid fa-envelope"></i>
+            </a>
+            <a class="social__link" href="https://www.facebook.com/elegante.cerise">
+                <i class="social__icon fa-brands fa-facebook"></i>
+            </a>
+            <a href="tel:+33652841013">
+                <i class="social__icon fa-solid fa-phone"></i>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="accueil" class="section accueil">
+            <div class="accueil__content">
+                <h2 class="accueil__heading">Audrey<br>Garcia</h2>
+                <p class="accueil__p">Assistante administrative indépendante
+                    <br>
+                    <br>sur Narbonnes et ses alentours
+                </p>
+            </div>
+        </section>
+        <section id="presentation" class="section presentation">
+            <div class="content">
+                <h3 class="presentation__heading">Présentation</h3>
+                <p>Après 5 années d’alternance en tant qu’Assistante Administratif RH, Chargée de
+                    formation puis Chargée de recrutement,
+                    J’ai obtenu mon Master 2 Entrepreneur, et acquis toutes les connaissances en Gestion d’Entreprise
+                    que je souhaitais.</p>
+
+                <p>J’ai ensuite mis en application mes acquis lors de mes 5 années en Centre de Profit
+                    A PRESENT…</p>
+
+                <p>Depuis 2021, j’ai acquis une reconnaissance par mes clients, pour mon professionnalisme, mon
+                    efficacité, et la bonne humeur que j’apporte dans la collaboration.</p>
+
+                <p>Actuellement, de nombreux professionnels me font confiance en me confiant la gestion administrative
+                    de leur entreprise en délégation complète ou partielle.</p>
+
+                <p>Notre volonté: Répondre à la problématique de nombreuses entreprises « Comment rendre la gestion
+                    d’entreprise moins chronophage dans les PME? »</p>
+
+                <h3>Ma proposition de valeur</h3>
+
+                <p>10 ans d’expérience en Pack Office, logiciels et Systèmes d’Information
+                    Une réelle vocation pour aider les autres
+                    Mes principales forces : Réactivité, Implication, Adaptabilité et Flexibilité
+                    Organisation méthodique et rigueur
+                    Et surtout, ma touche personnelle : le sourire et la bonne énergie.</p>
+
+            </div>
+        </section>
+
+        <section id="tarifs" class="section tarifs">
+            <div class="content">
+                <h3 class="tarifs__heading">Tarifs</h3>
+                <p>Quelle est votre rentabilité?</p>
+                <p>Combien de temps perdez-vous par mois en administratif ?</p>
+                <p>Combien d’argent vous rapporterait ce temps passé chez un client ?</p>
+                <p>Ne serait-il pas plus rentable de le déléguer?</p>
+                <p>Les prestations de services administratifs sont des charges déductibles de votre résultat fiscal
+                    (hors micro entreprise)</p>
+
+                <h4>TARIFS</h4>
+                <p>-20% sur les heures la première semaine.</p>
+
+                <h4>FORFAIT A L’HEURE</h4>
+                <p>Classement de fichiers et réorganisation = 30€/h TTC</p>
+                <p>Aide de premier niveau (secrétariat, saisie, mails et courriers) = 35€/h TTC</p>
+                <p>Aide deuxième niveau (gestion commerciale, ressources humaines) = 40€/h TTC</p>
+                <p>Aide troisième niveau (comptabilité analytique, contrôle de gestion, étude stratégique) = 40€/h TTC
+                </p>
+
+                <h4>FORFAITS A LA CARTE : <span class="small">selon étude et devis</span></h4>
+                <p>Demande d’Aide Exceptionnelle à l’embauche d’un apprenti = 150€ TTC (50€ au démarrage, le reste à
+                    réception du premier versement de l’aide)</p>
+                <p>Procédure complète de rupture conventionnelle = 150€ TTC (50€ au démarrage, le reste à réception de
+                    la confirmation de la DIRRECTE)</p>
+                <p>etc...</p>
+                <p>SIRET: 90452826200010</p>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <img class="footer__logo" src="./img/logo/logotype-02.png" alt="logo" width="250">
+        <div class="footer__content">
+            <p>11110 Vinassan</p>
+            <p>Mobilité: Occitanie</p>
+            <p><a href="mailto:audrey.garcia.pro@outlook.com">audrey.garcia.pro@outlook.com</a></p>
+            <p><a href="tel:+33652841013">0652841013</a></p>
+            <p>SIRET: 90452826200010</p>
+        </div>
+
+    </footer>
+    <script src="https://kit.fontawesome.com/288135bec0.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

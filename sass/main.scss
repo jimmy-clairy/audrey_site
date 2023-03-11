@@ -1,6 +1,38 @@
+@import "utils/variable";
+@import "utils/mixin";
+
 @import "bases/reset";
 @import "bases/general";
 
-h1 {
-    color: lightgreen;
+@import "layouts/header";
+@import "layouts/footer";
+
+@import "components/btn-toogles";
+@import "components/nav-slider";
+
+
+
+.accueil {
+    background:
+        linear-gradient(90deg, rgba($cl-primary, 1), rgba($cl-primary, 0.5)),
+        url(../img/pictures/desk.jpg) center / cover;
+    @include center;
+
+    &__content {
+        color: $cl-white;
+        text-align: center;
+    }
+
+    &__heading {
+        font-size: 5.5rem;
+        font-weight: normal;
+    }
+
+    &__p {
+        font-size: 2rem;
+    }
+}
+
+.tarifs {
+    background: rgba($cl-primary, 0.1);
 }

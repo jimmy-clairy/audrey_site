@@ -6,4 +6,25 @@ html {
 
 body {
     font-size: 1.6em;
+    color: $cl-txt;
+    font-family: sans-serif;
+    letter-spacing: 0.15rem;
+}
+
+h3 {
+    font-size: 2.6rem;
+}
+
+p {
+    line-height: 3rem;
+}
+
+.section {
+    min-height: 100vh;
+    padding: 10rem 5%;
+}
+
+.content {
+    margin: auto;
+    max-width: 80rem;
 }

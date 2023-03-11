@@ -1,0 +1,56 @@
+.header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    min-height: 15rem;
+    color: $cl-white;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    transition: 0.5s;
+
+    &.active {
+        background-color: $cl-white;
+        color: $cl-primary;
+        min-height: 8rem;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    &__logo {
+        font-size: 3rem;
+        width: 4rem;
+        margin: 1rem 0;
+        cursor: pointer;
+    }
+}
+
+.social {
+    width: 16rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+    &__icon {
+        font-size: 2.5rem;
+        transition: transform 0.4s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.nav {
+    display: none;
+
+    @include tablette {
+        display: block;
+    }
+
+    &__link {
+        margin-left: 1.8rem;
+        text-transform: uppercase;
+    }
+}

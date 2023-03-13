@@ -15,7 +15,7 @@
 .accueil {
     min-height: 100vh;
     background:
-        linear-gradient(90deg, rgba($cl-primary, 1), rgba($cl-secondary, 0.7)),
+        linear-gradient(90deg, rgba($cl-primary, 1), rgba($cl-secondary, 0.2)),
         url(../img/pictures/desk.jpg) fixed right 0;
     @include center;
     color: $cl-white;

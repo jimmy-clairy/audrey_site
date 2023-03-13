@@ -13,15 +13,15 @@ function toggleNav() {
 
 // Effect header
 const header = document.querySelector('.header');
+const header__logo = document.querySelector('.header__logo');
+console.log(header__logo);
 window.addEventListener('scroll', () => {
+    // console.log(window.scrollY);
+    header.classList.toggle("active", window.scrollY > 10)
 
-    const { scrollTop, clientHeight } = document.documentElement;
-
-    // console.log(scrollTop, clientHeight);
-
-    if (scrollTop < 100) {
-        header.classList.remove('active')
+    if (window.scrollY > 10) {
+        header__logo.src = `./img/logo/logotype-04.png`
     } else {
-        header.classList.add('active')
+        header__logo.src = `./img/logo/logotype-05.png`
     }
 })

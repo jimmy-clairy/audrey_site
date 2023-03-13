@@ -13,26 +13,30 @@
 
 
 .accueil {
+    min-height: 100vh;
     background:
-        linear-gradient(90deg, rgba($cl-primary, 1), rgba($cl-primary, 0.5)),
-        url(../img/pictures/desk.jpg) center / cover;
+        linear-gradient(90deg, rgba($cl-primary, 1), rgba($cl-secondary, 0.7)),
+        url(../img/pictures/desk.jpg) fixed right 0;
     @include center;
+    color: $cl-white;
+    text-align: center;
 
-    &__content {
-        color: $cl-white;
-        text-align: center;
-    }
-
-    &__heading {
-        font-size: 5.5rem;
-        font-weight: normal;
-    }
-
-    &__p {
-        font-size: 2rem;
+    &__logo {
+        margin-bottom: 2rem;
+        width: 90%;
+        max-width: 50rem;
+        height: auto;
     }
 }
 
 .tarifs {
-    background: rgba($cl-primary, 0.1);
+    .bloc {
+        border: 1px solid rgba(#000000, 0.2);
+        border-radius: 5px;
+        padding: 0 2rem;
+        margin-bottom: 2rem;
+        color: $cl-white;
+        background: linear-gradient(90deg, rgba($cl-primary, 1), rgba($cl-secondary, 0.6)),
+            url("../img/pictures/desk.jpg") right / cover;
+    }
 }

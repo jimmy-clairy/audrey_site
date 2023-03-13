@@ -13,58 +13,63 @@
 
 <body>
     <header class="header">
-        <a href="#accueil"><img class="header__logo" src="./img/logo/logotype-04.png" alt="logo"></a>
-        <div class="social">
-            <a class="social__link" href="https://www.linkedin.com/in/audrey-garcia-19578163/">
-                <i class="social__icon fa-brands fa-linkedin"></i>
+        <div class="header__container">
+            <a href="#accueil">
+                <img class="header__logo" src="./img/logo/logotype-04.png" alt="logo" width="40" height="70">
             </a>
-            <a class="social__link" href="mailto:audrey.garcia.pro@outlook.com">
-                <i class="social__icon fa-solid fa-envelope"></i>
-            </a>
-            <a class="social__link" href="https://www.facebook.com/elegante.cerise">
-                <i class="social__icon fa-brands fa-facebook"></i>
-            </a>
-            <a href="tel:+33652841013">
-                <i class="social__icon fa-solid fa-phone"></i>
-            </a>
-        </div>
-        <nav class="nav">
-            <a class="nav__link" data-nav="accueil" href="#accueil">Accueil</a>
-            <a class="nav__link" data-nav="presentation" href="#presentation">Présentation</a>
-            <a class="nav__link" data-nav="tarifs" href="#tarifs">Tarifs</a>
-        </nav>
+            <!-- SOCIAL -->
+            <div class="social">
+                <a class="social__link" href="https://www.linkedin.com/in/audrey-garcia-19578163/">
+                    <i class="social__icon fa-brands fa-linkedin"></i>
+                </a>
+                <a class="social__link" href="mailto:audrey.garcia.pro@outlook.com">
+                    <i class="social__icon fa-solid fa-envelope"></i>
+                </a>
+                <a class="social__link" href="https://www.facebook.com/elegante.cerise">
+                    <i class="social__icon fa-brands fa-facebook"></i>
+                </a>
+                <a href="tel:+33652841013">
+                    <i class="social__icon fa-solid fa-phone"></i>
+                </a>
+            </div>
+            <!-- NAV -->
+            <nav class="nav">
+                <a class="nav__link" data-nav="presentation" href="#presentation">Présentation</a>
+                <a class="nav__link" data-nav="tarifs" href="#tarifs">Tarifs</a>
+                <a class="nav__link" data-nav="definition" href="#definition">Définiton</a>
+            </nav>
 
-        <!-- BTN TOGGLE -->
-        <button class="btn-toggle" aria-label="toggle curtain navigation">
-            <span class="btn-toggle__line l1"></span>
-            <span class="btn-toggle__line l2"></span>
-            <span class="btn-toggle__line l3"></span>
-        </button>
+            <!-- BTN TOGGLE -->
+            <button class="btn-toggle" aria-label="toggle curtain navigation">
+                <span class="btn-toggle__line l1"></span>
+                <span class="btn-toggle__line l2"></span>
+                <span class="btn-toggle__line l3"></span>
+            </button>
+        </div>
     </header>
 
     <!-- NAV SLIDER -->
     <nav class="nav-slider">
-        <div class="nav-slider__icons">
-            <img id="iconJ" class="nav-slider__img" src="./img/logo/logotype-05.png" alt="logo" height="80">
-        </div>
+        <img class="nav-slider__logo" src="./img/logo/logotype-05.png" alt="logo" width="46" height="80">
 
         <p class="nav-slider__p">Audrey Garcia<br>Aide Administrative</p>
-        <a class="nav-slider__link" href="#accueil">Accueil</a>
         <a class="nav-slider__link" href="#presentation">Présentation</a>
         <a class="nav-slider__link" href="#tarifs">Tarifs</a>
+        <a class="nav-slider__link" href="#definiton">Définiton</a>
     </nav>
 
     <main>
-        <section id="accueil" class="section accueil">
+        <!-- ACCUEIL -->
+        <div id="accueil" class="section accueil">
             <div class="accueil__content">
-                <h2 class="accueil__heading">Audrey<br>Garcia</h2>
-                <p class="accueil__p">Assistante administrative indépendante
-                    <br>
-                    <br>sur Narbonnes et ses alentours
+                <img class="accueil__logo" src="./img/logo/logotype-02.png" alt="accueil logo" width="220" height="120">
+                <p class="accueil__p">
+                    sur Narbonnes et ses alentours
                 </p>
             </div>
-        </section>
-        <section id="presentation" class="section presentation">
+        </div>
+        <!-- PRESENTATION -->
+        <div id="presentation" class="section presentation">
             <div class="content">
                 <h3 class="presentation__heading">Présentation</h3>
                 <p>Après 5 années d’alternance en tant qu’Assistante Administratif RH, Chargée de
@@ -93,9 +98,9 @@
                     Et surtout, ma touche personnelle : le sourire et la bonne énergie.</p>
 
             </div>
-        </section>
-
-        <section id="tarifs" class="section tarifs">
+        </div>
+        <!-- TARIFS -->
+        <div id="tarifs" class="section tarifs">
             <div class="content">
                 <h3 class="tarifs__heading">Tarifs</h3>
                 <p>Quelle est votre rentabilité?</p>
@@ -107,35 +112,55 @@
 
                 <h4>TARIFS</h4>
                 <p>-20% sur les heures la première semaine.</p>
+                <div class="bloc">
+                    <h4>FORFAIT A L’HEURE</h4>
+                    <p>Classement de fichiers et réorganisation = 30€/h TTC</p>
+                    <p>Aide de premier niveau (secrétariat, saisie, mails et courriers) = 35€/h TTC</p>
+                    <p>Aide deuxième niveau (gestion commerciale, ressources humaines) = 40€/h TTC</p>
+                    <p>Aide troisième niveau (comptabilité analytique, contrôle de gestion, étude stratégique) = 40€/h
+                        TTC</p>
+                </div>
 
-                <h4>FORFAIT A L’HEURE</h4>
-                <p>Classement de fichiers et réorganisation = 30€/h TTC</p>
-                <p>Aide de premier niveau (secrétariat, saisie, mails et courriers) = 35€/h TTC</p>
-                <p>Aide deuxième niveau (gestion commerciale, ressources humaines) = 40€/h TTC</p>
-                <p>Aide troisième niveau (comptabilité analytique, contrôle de gestion, étude stratégique) = 40€/h TTC
-                </p>
-
-                <h4>FORFAITS A LA CARTE : <span class="small">selon étude et devis</span></h4>
-                <p>Demande d’Aide Exceptionnelle à l’embauche d’un apprenti = 150€ TTC (50€ au démarrage, le reste à
-                    réception du premier versement de l’aide)</p>
-                <p>Procédure complète de rupture conventionnelle = 150€ TTC (50€ au démarrage, le reste à réception de
-                    la confirmation de la DIRRECTE)</p>
-                <p>etc...</p>
-                <p>SIRET: 90452826200010</p>
-
+                <div class="bloc">
+                    <h4>FORFAITS A LA CARTE : <span class="small">selon étude et devis</span></h4>
+                    <p>Demande d’Aide Exceptionnelle à l’embauche d’un apprenti = 150€ TTC (50€ au démarrage, le reste à
+                        réception du premier versement de l’aide)</p>
+                    <p>Procédure complète de rupture conventionnelle = 150€ TTC (50€ au démarrage, le reste à réception
+                        de
+                        la confirmation de la DIRRECTE)</p>
+                </div>
             </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <img class="footer__logo" src="./img/logo/logotype-02.png" alt="logo" width="250">
-        <div class="footer__content">
-            <p>11110 Vinassan</p>
-            <p>Mobilité: Occitanie</p>
-            <p><a href="mailto:audrey.garcia.pro@outlook.com">audrey.garcia.pro@outlook.com</a></p>
-            <p><a href="tel:+33652841013">0652841013</a></p>
-            <p>SIRET: 90452826200010</p>
         </div>
+        <!-- DEFINITION -->
+        <div id="definition" class="section definition">
+            <div class="content">
+                <h3 class="tarifs__heading">Définition</h3>
+                <p>Une assistante administrative indépendante exerce à son compte sous le statut de micro entrepreneur,
+                    pour toutes entreprises souhaitant déléguer leur gestion administrative.</p>
+                <p> Ainsi que pour des
+                    particuliers.</p>
+                <p>Elle effectue ses prestations de façon ponctuelle (remplacement de courte durée) ou régulière (un
+                    besoin de faible volume horaire) pour lequel il serait difficile de trouver une secrétaire salariée.
+                </p>
+                <p>Elle peut exercer à distance ou sur site, en fonction des besoins
+                    Faire appel à une assistante administrative vous libère des contraintes administratives liées à une
+                    embauche, vous permet d’optimiser votre temps et vous fait bénéficier des compétences d’une
+                    secrétaire professionnelle pour quelques heures de travail.</p>
+            </div>
+        </div>
+    </main>
 
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./img/logo/logotype-02.png" alt="logo" width="250" height="138">
+            <div class="footer__content">
+                <p>11110 Vinassan</p>
+                <p>Mobilité: Occitanie</p>
+                <p><a href="mailto:audrey.garcia.pro@outlook.com">audrey.garcia.pro@outlook.com</a></p>
+                <p><a href="tel:+33652841013">0652841013</a></p>
+                <p>SIRET: 90452826200010</p>
+            </div>
+        </div>
     </footer>
     <script src="https://kit.fontawesome.com/288135bec0.js" crossorigin="anonymous"></script>
 </body>

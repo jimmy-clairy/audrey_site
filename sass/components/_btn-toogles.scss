@@ -1,11 +1,10 @@
 .btn-toggle {
     position: relative;
-    height: 3.5rem;
-    width: 3.5rem;
+    height: 4rem;
+    width: 4rem;
     @include center;
     border: none;
-    border-radius: $border-rad;
-    background: $cl-white;
+    background: transparent;
     cursor: pointer;
     transition: transform 0.3s;
 
@@ -18,8 +17,12 @@
         display: block;
         width: 75%;
         height: 0.3rem;
-        background: $cl-primary;
+        background: $cl-white;
         transition: transform 0.3s ease-out, opacity 0.1s ease-out;
+
+        &.active {
+            background-color: $cl-primary;
+        }
     }
 
     & .l1 {

@@ -13,15 +13,18 @@ function toggleNav() {
 
 // Effect header
 const header = document.querySelector('.header');
-const header__logo = document.querySelector('.header__logo');
-console.log(header__logo);
+const headerLogo = document.querySelector('.header__logo');
+const lines = document.querySelectorAll('.btn-toggle__line');
+
 window.addEventListener('scroll', () => {
     // console.log(window.scrollY);
-    header.classList.toggle("active", window.scrollY > 10)
-
     if (window.scrollY > 10) {
-        header__logo.src = `./img/logo/logotype-04.png`
+        header.classList.add("active")
+        headerLogo.src = `./img/logo/logotype-04.png`;
+        lines.forEach((line) => line.classList.add("active"))
     } else {
-        header__logo.src = `./img/logo/logotype-05.png`
+        header.classList.remove("active")
+        headerLogo.src = `./img/logo/logotype-05.png`;
+        lines.forEach((line) => line.classList.remove("active"))
     }
 })

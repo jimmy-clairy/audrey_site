@@ -11,15 +11,20 @@
 @import "components/nav-slider";
 
 
-
 .accueil {
     min-height: 100vh;
-    background:
-        linear-gradient(90deg, rgba($cl-primary, 1), rgba($cl-secondary, 0.2)),
-        url(../img/pictures/desk.jpg) fixed right 0;
     @include center;
     color: $cl-white;
     text-align: center;
+    background:
+        linear-gradient(90deg, rgba($cl-primary, 1), rgba($cl-secondary, 0.2)),
+        url("../img/pictures/desk.webp") right / cover;
+
+    @include tablette {
+        background:
+            linear-gradient(90deg, rgba($cl-primary, 1), rgba($cl-secondary, 0.2)),
+            url("../img/pictures/desk.webp") fixed right 0;
+    }
 
     &__logo {
         margin-bottom: 2rem;
@@ -37,6 +42,53 @@
         margin-bottom: 2rem;
         color: $cl-white;
         background: linear-gradient(90deg, rgba($cl-primary, 1), rgba($cl-secondary, 0.6)),
-            url("../img/pictures/desk.jpg") right / cover;
+            url("../img/pictures/desk.webp") right / cover;
+    }
+}
+
+.blocs {
+    display: flex;
+    flex-direction: column;
+
+    @include tablette {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    margin-top: 5rem;
+
+    &__background {
+        background-image: url("../img/pictures/desk.webp");
+        background-position: right;
+        background-size: cover;
+
+        height: 20rem;
+
+        @include tablette {
+            width: 20%;
+            flex-wrap: wrap;
+            height: 40rem;
+        }
+
+        transition: 0.4s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__overlay {
+        background: rgba($cl-primary, 0.0);
+        height: 100%;
+        @include center;
+
+        &:hover {
+            background: rgba($cl-primary, 0.5);
+            color: $cl-white;
+        }
+    }
+
+    &__p {
+        font-size: 3rem;
     }
 }

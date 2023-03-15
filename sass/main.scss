@@ -7,94 +7,10 @@
 @import "layouts/header";
 @import "layouts/footer";
 
+@import "pages/accueil";
+@import "pages/presentation-parcours";
+@import "pages/tarifs";
+@import "pages/blocs-img";
+
 @import "components/btn-toogles";
 @import "components/nav-slider";
-
-
-.accueil {
-    min-height: 100vh;
-    @include center;
-    color: $cl-white;
-    text-align: center;
-    background:
-        linear-gradient(90deg, rgba($cl-primary, 1), rgba($cl-secondary, 0.2)),
-        url("../img/pictures/desk.webp") right / cover;
-
-    @include tablette {
-        background:
-            linear-gradient(90deg, rgba($cl-primary, 1), rgba($cl-secondary, 0.2)),
-            url("../img/pictures/desk.webp") fixed right 0;
-    }
-
-    &__logo {
-        margin-bottom: 2rem;
-        width: 90%;
-        max-width: 50rem;
-        height: auto;
-    }
-}
-
-.tarifs {
-    .bloc {
-        border: 1px solid rgba(#000000, 0.2);
-        border-radius: 5px;
-        padding: 0 2rem;
-        margin-bottom: 2rem;
-        color: $cl-white;
-        background: linear-gradient(90deg, rgba($cl-primary, 1), rgba($cl-secondary, 0.6)),
-            url("../img/pictures/desk.webp") right / cover;
-    }
-}
-
-.blocs {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5rem;
-
-    @include tablette {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    &__background {
-        position: relative;
-        background-image: url("../img/pictures/desk.webp");
-        background-position: right;
-        background-size: cover;
-        height: 20rem;
-        cursor: pointer;
-        @include center;
-
-        @include tablette {
-            width: 20%;
-            flex-wrap: wrap;
-            height: 40rem;
-        }
-
-        transition: 0.4s;
-
-        &:hover {
-            transform: scale(1.1);
-            color: $cl-white;
-            z-index: 5;
-        }
-
-        &:hover .blocs__overlay {
-            background: $cl-primary;
-            opacity: 0.4;
-        }
-    }
-
-    &__overlay {
-        position: absolute;
-        background: $cl-primary;
-        opacity: 0;
-        height: 100%;
-        width: 100%;
-    }
-
-    &__p {
-        position: absolute;
-        font-size: 3rem;
-    }
-}

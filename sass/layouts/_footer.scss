@@ -11,7 +11,7 @@
         flex-direction: column;
         align-items: center;
 
-        @include tablette {
+        @include laptop {
             max-width: 120rem;
             margin: auto;
             flex-direction: row;
@@ -23,7 +23,7 @@
         max-width: 25rem;
         margin-bottom: 5rem;
 
-        @include tablette {
+        @include laptop {
             margin-bottom: 0;
         }
     }

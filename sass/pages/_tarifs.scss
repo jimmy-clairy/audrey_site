@@ -1,0 +1,54 @@
+.tarifs {
+    .container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+
+        @include laptop {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
+    .bloc {
+        position: relative;
+        border: 2px solid rgb(222, 222, 222);
+        border-radius: $border-rad;
+        background: url("../img/pictures/desk.webp") right / cover;
+        padding: 2rem;
+
+        @include laptop {
+            width: 48.5%;
+            padding: 4rem;
+        }
+
+        &:hover .overlay {
+            opacity: 0.6;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: $cl-white;
+            height: 100%;
+            width: 100%;
+            transition: opacity 0.3s;
+        }
+
+        .icon {
+            position: relative;
+            width: 6rem;
+        }
+
+        h4 {
+            position: relative;
+            font-size: 2.2rem;
+        }
+
+        ul {
+            position: relative;
+        }
+    }
+}

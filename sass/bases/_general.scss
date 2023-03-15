@@ -13,12 +13,6 @@ body {
     overflow-x: hidden;
 }
 
-h3 {
-    font-size: 2.6rem;
-    position: relative;
-    margin-top: 10rem;
-}
-
 h3::before {
     content: "";
     position: absolute;
@@ -26,6 +20,12 @@ h3::before {
     width: 10rem;
     height: 0.3rem;
     background: linear-gradient(90deg, $cl-primary, rgba($cl-secondary, 0));
+}
+
+h3 {
+    font-size: 2.6rem;
+    position: relative;
+    margin-top: 10rem;
 }
 
 p {
@@ -38,11 +38,13 @@ img {
     height: auto;
 }
 
-.section {
-    padding: 4rem 5% 0;
+li {
+    margin-bottom: 2rem;
+    line-height: 2.5rem;
 }
 
-.content {
+.section {
+    max-width: 130rem;
+    padding: 1rem 5% 0;
     margin: auto;
-    max-width: 80rem;
 }

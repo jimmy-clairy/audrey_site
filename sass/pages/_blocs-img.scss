@@ -1,0 +1,75 @@
+.blocs-img {
+    display: flex;
+    flex-direction: column;
+
+    @include laptop {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .background:nth-child(1) {
+        background-image: url("../img/pictures/Paix.webp");
+        background-size: cover;
+    }
+
+    .background:nth-child(2) {
+        background-image: url("../img/pictures/temps.webp");
+        background-size: cover;
+    }
+
+    .background:nth-child(3) {
+        background-image: url("../img/pictures/economies.webp");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .background:nth-child(4) {
+        background-image: url("../img/pictures/free.webp");
+        background-size: cover;
+    }
+
+    .background {
+        position: relative;
+        height: 20rem;
+        @include center;
+
+        transition: 0.4s;
+
+        &:hover {
+            transform: scale(1.1);
+            color: $cl-white;
+            z-index: 5;
+        }
+
+        &:hover .overlay {
+            background: $cl-primary;
+            opacity: 0.6;
+        }
+
+        @include laptop {
+            width: 25%;
+            height: 35rem;
+            flex-wrap: wrap;
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        background: $cl-white;
+        opacity: 0.4;
+        height: 100%;
+        width: 100%;
+    }
+
+    p {
+        position: relative;
+        font-size: 2rem;
+        padding: 0 3rem;
+        line-height: 4rem;
+        font-weight: 600;
+
+        @include laptop {
+            font-size: 2.2rem;
+        }
+    }
+}

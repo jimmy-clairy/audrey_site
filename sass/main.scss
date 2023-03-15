@@ -49,20 +49,21 @@
 .blocs {
     display: flex;
     flex-direction: column;
+    margin-top: 5rem;
 
     @include tablette {
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-    margin-top: 5rem;
-
     &__background {
+        position: relative;
         background-image: url("../img/pictures/desk.webp");
         background-position: right;
         background-size: cover;
-
         height: 20rem;
+        cursor: pointer;
+        @include center;
 
         @include tablette {
             width: 20%;
@@ -74,21 +75,26 @@
 
         &:hover {
             transform: scale(1.1);
+            color: $cl-white;
+            z-index: 5;
+        }
+
+        &:hover .blocs__overlay {
+            background: $cl-primary;
+            opacity: 0.4;
         }
     }
 
     &__overlay {
-        background: rgba($cl-primary, 0.0);
+        position: absolute;
+        background: $cl-primary;
+        opacity: 0;
         height: 100%;
-        @include center;
-
-        &:hover {
-            background: rgba($cl-primary, 0.5);
-            color: $cl-white;
-        }
+        width: 100%;
     }
 
     &__p {
+        position: absolute;
         font-size: 3rem;
     }
 }

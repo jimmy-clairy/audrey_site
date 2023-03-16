@@ -6,7 +6,7 @@
     color: $cl-white;
     @include center;
     padding: 0 5%;
-    transition: 0.5s;
+    transition: background-color 0.5s, min-height 0.5s;
 
     &.active {
         background-color: rgba(255, 255, 255, 1);
@@ -18,6 +18,10 @@
             &:hover {
                 border-bottom: 2px solid $cl-primary;
             }
+        }
+
+        .social svg {
+            fill: $cl-primary;
         }
     }
 
@@ -37,9 +41,9 @@
 
 .social {
     width: 16rem;
-    margin: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     @include mobile-L {
         width: 20rem;
@@ -49,8 +53,8 @@
         margin: auto 5rem auto auto;
     }
 
-    &__icon {
-        font-size: 2.5rem;
+    svg {
+        fill: $cl-white;
         transition: transform 0.4s;
 
         &:hover {

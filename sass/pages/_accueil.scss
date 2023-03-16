@@ -1,8 +1,8 @@
 .accueil {
     min-height: 100vh;
     @include center;
+    flex-direction: column;
     color: $cl-white;
-    text-align: center;
     background:
         linear-gradient(90deg, rgba($cl-primary, 1), rgba($cl-secondary, 0.3)),
         url("../img/pictures/desk.webp") right / cover;
@@ -17,7 +17,7 @@
     &__logo {
         margin-bottom: 2rem;
         width: 90%;
-        max-width: 50rem;
+        max-width: 45rem;
         height: auto;
     }
 }

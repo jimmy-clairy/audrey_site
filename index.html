@@ -14,29 +14,48 @@
 <body>
     <header class="header">
         <div class="header__container">
+            <!-- LOGO -->
             <a href="#accueil">
                 <img class="header__logo" src="./img/logo/logotype-05.png" alt="logo" width="40" height="70">
             </a>
             <!-- SOCIAL -->
             <div class="social">
-                <a class="social__link" href="https://www.linkedin.com/in/audrey-garcia-19578163/">
-                    <i class="social__icon fa-brands fa-linkedin"></i>
+                <a class="social__link" href="https://www.linkedin.com/in/audrey-garcia-19578163/" target="_blank"
+                    rel="noopener noreferrer">
+                    <svg fill="#fff" stroke="none" width="28" height="28" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512">
+                        <path
+                            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                    </svg>
                 </a>
                 <a class="social__link" href="mailto:audrey.garcia.pro@outlook.com">
-                    <i class="social__icon fa-solid fa-envelope"></i>
+                    <svg fill="#fff" stroke="none" width="28" height="28" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path
+                            d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                    </svg>
                 </a>
-                <a class="social__link" href="https://www.facebook.com/elegante.cerise">
-                    <i class="social__icon fa-brands fa-facebook"></i>
+                <a class="social__link" href="https://www.facebook.com/elegante.cerise" target="_blank"
+                    rel="noopener noreferrer">
+                    <svg fill="#fff" stroke="none" width="28" height="28" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path
+                            d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z" />
+                    </svg>
                 </a>
-                <a href="tel:+33652841013">
-                    <i class="social__icon fa-solid fa-phone"></i>
+                <a class="social__link" href="tel:+33652841013">
+                    <svg fill="#fff" stroke="none" width="28" height="28" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path
+                            d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                    </svg>
                 </a>
             </div>
             <!-- NAV -->
             <nav class="nav">
                 <a class="nav__link" data-nav="presentation" href="#presentation">Présentation</a>
-                <a class="nav__link" data-nav="tarifs" href="#tarifs">Tarifs</a>
                 <a class="nav__link" data-nav="definition" href="#definition">Définiton</a>
+                <a class="nav__link" data-nav="tarifs" href="#tarifs">Tarifs</a>
             </nav>
 
             <!-- BTN TOGGLE -->
@@ -51,21 +70,17 @@
     <!-- NAV SLIDER -->
     <nav class="nav-slider">
         <!-- <img class="nav-slider__logo" src="./img/logo/logotype-05.png" alt="logo" width="46" height="80"> -->
-
         <p class="nav-slider__p"><span>Audrey Garcia</span><br>Aide Administrative</p>
         <a class="nav-slider__link" href="#presentation">Présentation</a>
-        <a class="nav-slider__link" href="#tarifs">Tarifs</a>
         <a class="nav-slider__link" href="#definition">Définiton</a>
+        <a class="nav-slider__link" href="#tarifs">Tarifs</a>
     </nav>
 
     <main>
         <!-- ACCUEIL -->
         <div id="accueil" class="accueil">
-            <div class="accueil__content">
-                <img class="accueil__logo" src="./img/logo/logotype-02.webp" alt="accueil logo" width="220"
-                    height="120">
-                <p class="accueil__p">sur Narbonnes et ses alentours</p>
-            </div>
+            <img class="accueil__logo" src="./img/logo/logotype-02.webp" alt="accueil logo" width="220" height="120">
+            <p class="accueil__p">sur Narbonnes et ses alentours</p>
         </div>
         <!-- PRESENTATION & PARCOURS -->
         <div id="presentation" class="section presentation">
@@ -108,8 +123,8 @@
                 <div><span>2015</span>DUT GEA et Assistante de Gestion et RH</div>
             </div>
         </div>
-        <!-- PRESENTATION 2 -->
-        <div id="presentation-2" class="section presentation-2">
+        <!-- DEFINITION -->
+        <div id="definition" class="section definition">
             <h3>Revenez à votre cœur de métier</h3>
             <p>Une assistante administrative indépendante exerce à son compte sous le statut de micro
                 entrepreneur, pour toutes entreprises souhaitant déléguer leur gestion administrative.</p>
@@ -161,7 +176,7 @@
             <div class="container">
                 <div class="bloc">
                     <div class="overlay"></div>
-                    <img class="icon" src="./img/pictures/administratif.png" alt="icon gestion" width="80" height="80">
+                    <img class="icon" src="./img/icon/administratif.webp" alt="icon gestion" width="80" height="80">
                     <h4>Gestion administrative</h4>
                     <ul>
                         <li>Gestion de courrier et mails (traitement, rédaction, saisie et mise en forme).</li>
@@ -176,7 +191,7 @@
                 </div>
                 <div class="bloc">
                     <div class="overlay"></div>
-                    <img class="icon" src="./img/pictures/personnel.png" alt="icon gestion" width="80" height="80">
+                    <img class="icon" src="./img/icon/personnel.webp" alt="icon gestion" width="80" height="80">
                     <h4>Gestion du personnel</h4>
                     <ul>
                         <li>Saisie des contrats de travail et avenants selon trame existante.</li>
@@ -193,7 +208,7 @@
                 </div>
                 <div class="bloc">
                     <div class="overlay"></div>
-                    <img class="icon" src="./img/pictures/tresorerie.png" alt="icon gestion" width="80" height="80">
+                    <img class="icon" src="./img/icon/tresorerie.webp" alt="icon gestion" width="80" height="80">
                     <h4>Gestion de la trésorerie</h4>
                     <ul>
                         <li>Gestion et suivi des encaissements.</li>
@@ -208,7 +223,7 @@
                 </div>
                 <div class="bloc">
                     <div class="overlay"></div>
-                    <img class="icon" src="./img/pictures/commercial.png" alt="icon gestion" width="80" height="80">
+                    <img class="icon" src="./img/icon/commercial.webp" alt="icon gestion" width="80" height="80">
                     <h4>Gestion commerciale</h4>
                     <ul>
                         <li>Etablissement des devis et factures.</li>
@@ -222,21 +237,6 @@
                     </ul>
                 </div>
             </div>
-        </div>
-        <!-- DEFINITION -->
-        <div id="definition" class="section definition">
-            <h3>Définition</h3>
-            <p>Une assistante administrative indépendante exerce à son compte sous le statut de micro entrepreneur,
-                pour toutes entreprises souhaitant déléguer leur gestion administrative.</p>
-            <p> Ainsi que pour des
-                particuliers.</p>
-            <p>Elle effectue ses prestations de façon ponctuelle (remplacement de courte durée) ou régulière (un
-                besoin de faible volume horaire) pour lequel il serait difficile de trouver une secrétaire salariée.
-            </p>
-            <p>Elle peut exercer à distance ou sur site, en fonction des besoins
-                Faire appel à une assistante administrative vous libère des contraintes administratives liées à une
-                embauche, vous permet d’optimiser votre temps et vous fait bénéficier des compétences d’une
-                secrétaire professionnelle pour quelques heures de travail.</p>
         </div>
     </main>
 
@@ -252,7 +252,6 @@
             </div>
         </div>
     </footer>
-    <script src="https://kit.fontawesome.com/288135bec0.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

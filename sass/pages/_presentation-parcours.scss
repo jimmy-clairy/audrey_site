@@ -4,6 +4,14 @@
         align-items: flex-start;
         column-gap: 10rem;
     }
+
+    img {
+        width: 13rem;
+        height: 13rem;
+        float: left;
+        margin-right: 2rem;
+        border-radius: 1rem;
+    }
 }
 
 .parcours {

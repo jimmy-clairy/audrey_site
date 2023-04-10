@@ -48,3 +48,14 @@ li {
     padding: 1rem 5% 0;
     margin: auto;
 }
+
+.reveal {
+    opacity: 0;
+    transform: translateY(5rem);
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s;
+}

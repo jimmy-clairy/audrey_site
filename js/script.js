@@ -29,7 +29,7 @@ window.addEventListener('scroll', () => {
     }
 })
 
-const ratio = .2
+const ratio = .1
 const options = {
     root: null,
     rootMargin: "0px",
@@ -41,10 +41,7 @@ const handleIntersect = function (entries, observer) {
         if (entry.intersectionRatio > ratio) {
             entry.target.classList.add('reveal-visible')
             observer.unobserve(entry.target)
-        } else {
-
         }
-        console.log(entry.intersectionRatio);
     })
 }
 const observer = new IntersectionObserver(handleIntersect, options)

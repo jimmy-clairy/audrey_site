@@ -1,5 +1,6 @@
 .header {
     position: fixed;
+    top: 0;
     z-index: 100;
     width: 100%;
     min-height: 15rem;
@@ -13,16 +14,6 @@
         color: $cl-primary;
         min-height: 8rem;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-
-        .nav__link {
-            &:hover {
-                border-bottom: 2px solid $cl-primary;
-            }
-        }
-
-        .social svg {
-            fill: $cl-primary;
-        }
     }
 
     &__container {
@@ -35,7 +26,6 @@
     &__logo {
         width: 4rem;
         margin: 1rem 0;
-        cursor: pointer;
     }
 }
 
@@ -54,7 +44,6 @@
     }
 
     svg {
-        fill: $cl-white;
         transition: transform 0.4s;
 
         &:hover {
@@ -77,7 +66,7 @@
             transition: 0.3s;
 
             &:hover {
-                border-bottom: 2px solid $cl-white;
+                border-bottom: 2px solid currentColor;
             }
         }
     }

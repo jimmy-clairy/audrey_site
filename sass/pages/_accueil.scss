@@ -1,7 +1,6 @@
 .accueil {
     min-height: 100vh;
     @include center;
-    flex-direction: column;
     color: $cl-white;
     background:
         linear-gradient(90deg, rgba($cl-primary, 1), rgba($cl-secondary, 0.3)),
@@ -13,11 +12,22 @@
             url("../img/pictures/desk.webp") fixed right 0;
         background-size: 100%;
     }
-
+    &__wrapper {
+        text-align: center;
+    }
     &__logo {
-        margin-bottom: 2rem;
-        width: 90%;
-        max-width: 45rem;
-        height: auto;
+        width: clamp(5rem, 8vw,8rem);
+    }
+    h1,h2 {
+        text-transform: uppercase;
+        margin: 1rem;
+    }
+    h1 {
+        font-size: clamp(3rem, 6vw ,5rem);
+        font-weight: 500;
+    }
+    h2 {
+        font-size: clamp(1.8rem, 3vw ,2.6rem);
+        font-weight: 300;
     }
 }

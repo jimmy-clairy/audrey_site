@@ -1,5 +1,5 @@
 .footer {
-    padding: 5rem 5%;
+    padding: 5rem 5% 2rem;
     margin-top: 5rem;
     color: $cl-white;
     background:
@@ -29,7 +29,6 @@
     }
 
     a {
-        display: block;
         text-decoration: underline;
     }
 }

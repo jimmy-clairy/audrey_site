@@ -9,7 +9,7 @@ body {
     font-size: 1.6em;
     color: $cl-txt;
     font-family: sans-serif;
-    letter-spacing: 0.15rem;
+    // letter-spacing: 0.1rem;
     overflow-x: hidden;
 }
 
@@ -28,9 +28,9 @@ h3 {
     margin-top: 10rem;
 }
 
-p {
-    line-height: 3rem;
-    font-weight: 500;
+main p {
+    line-height: 2.8rem;
+    margin: 3rem 0;
 }
 
 img {
@@ -43,7 +43,7 @@ li {
     line-height: 2.5rem;
 }
 
-.section {
+.container {
     max-width: 130rem;
     padding: 1rem 5% 0;
     margin: auto;

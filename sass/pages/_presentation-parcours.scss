@@ -6,12 +6,20 @@
     }
 
     img {
-        width: 13rem;
-        height: 13rem;
+        width: 10rem;
+        height: 10rem;
         float: left;
         margin-right: 2rem;
         border-radius: 1rem;
     }
+}
+
+.special-p {
+    background-color: $cl-primary;
+    padding: 2rem 1rem;
+    color: $cl-white;
+    border-radius: 5px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 .parcours {

@@ -8,7 +8,7 @@
 
     @include laptop {
         background:
-            linear-gradient(90deg, rgba($cl-primary, 1), rgba($cl-secondary, 0.3)),
+            linear-gradient(90deg, rgba($cl-primary, 1), rgba($cl-secondary, 0.6)),
             url("../img/pictures/desk.webp") fixed right 0;
         background-size: 100%;
     }

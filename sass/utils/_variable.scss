@@ -1,7 +1,9 @@
 $cl-primary: #75639f;
-$cl-secondary: #a8acd7;
+$cl-secondary: #0010c6; // Old color #a8acd7
 $cl-white: #fff;
 $cl-black: #000;
 $cl-txt: #333;
 
 $border-rad: 5px;
+
+$gradient:linear-gradient(90deg, $cl-primary, rgba($cl-secondary, 0.6));

@@ -1,9 +1,9 @@
 .footer {
-    padding: 5rem 5% 2rem;
+    padding: 5rem 2rem 2rem;
     margin-top: 5rem;
     color: $cl-white;
     background:
-        linear-gradient(90deg, rgba($cl-primary, 1), rgba($cl-secondary, 0.6)),
+    $gradient,
         url("../img/pictures/desk.webp") right / cover;
 
     &__container {

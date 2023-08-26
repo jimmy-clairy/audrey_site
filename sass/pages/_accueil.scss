@@ -2,19 +2,19 @@
     min-height: 100vh;
     @include center;
     color: $cl-white;
+    text-align: center;
     background:
-        linear-gradient(90deg, rgba($cl-primary, 1), rgba($cl-secondary, 0.3)),
+        $gradient,
         url("../img/pictures/desk.webp") right / cover;
 
     @include laptop {
         background:
-            linear-gradient(90deg, rgba($cl-primary, 1), rgba($cl-secondary, 0.6)),
+            $gradient,
             url("../img/pictures/desk.webp") fixed right 0;
         background-size: 100%;
+        padding-top: 10rem;
     }
-    &__wrapper {
-        text-align: center;
-    }
+
     &__logo {
         width: clamp(5rem, 8vw,8rem);
     }

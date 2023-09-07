@@ -1,60 +1,63 @@
 html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-    user-select: none;
-    overflow-x: hidden;
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	user-select: none;
+	overflow-x: hidden;
+	@include mobile-L {
+		user-select: auto;
+	}
 }
 
 body {
-    font-size: 1.6em;
-    color: $cl-txt;
-    font-family: sans-serif;
-    overflow-x: hidden;
+	font-size: 1.6em;
+	color: $cl-txt;
+	font-family: sans-serif;
+	overflow-x: hidden;
 }
 
 h3::before {
-    content: "";
-    position: absolute;
-    top: -4rem;
-    width: 10rem;
-    height: 0.3rem;
-    background: linear-gradient(90deg, $cl-primary, rgba($cl-secondary, 0));
+	content: '';
+	position: absolute;
+	top: -4rem;
+	width: 10rem;
+	height: 0.3rem;
+	background: linear-gradient(90deg, $cl-primary, rgba($cl-secondary, 0));
 }
 
 h3 {
-    font-size: 2.6rem;
-    position: relative;
-    margin-top: 10rem;
+	font-size: 2.6rem;
+	position: relative;
+	margin-top: 10rem;
 }
 
 main p {
-    line-height: 2.8rem;
-    margin: 3rem 0;
+	line-height: 2.8rem;
+	margin: 3rem 0;
 }
 
 img {
-    width: 100%;
-    height: auto;
+	width: 100%;
+	height: auto;
 }
 
 li {
-    margin-bottom: 2rem;
-    line-height: 2.5rem;
+	margin-bottom: 2rem;
+	line-height: 2.5rem;
 }
 
 .container {
-    max-width: 124rem;
-    padding: 1rem 2rem 0;
-    margin: auto;
+	max-width: 124rem;
+	padding: 1rem 2rem 0;
+	margin: auto;
 }
 
 .reveal {
-    opacity: 0;
-    transform: translateY(5rem);
+	opacity: 0;
+	transform: translateY(5rem);
 }
 
 .reveal-visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: 1s;
+	opacity: 1;
+	transform: translateY(0);
+	transition: 1s;
 }

@@ -1,54 +1,45 @@
 .tarifs {
     .container-bloc {
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
 
         @include laptop {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
         }
     }
 
     .bloc {
-        position: relative;
         border: 2px solid rgb(222, 222, 222);
         border-radius: $border-rad;
-        background: url("../img/pictures/desk.webp") right / cover;
-        padding: 2rem;
-
-        @include laptop {
-            width: 48.5%;
-            padding: 4rem;
+        .content{
+            padding: 2rem 2rem 0rem;
+            background-color: white;
+            transition: 0.4s;
+            height: 100%;
+            @include laptop {
+                padding: 4rem 4rem 0rem;
+            }
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.7);
+            }
         }
 
-        &:hover .overlay {
-            opacity: 0.8;
-        }
-
-        .overlay {
+        .back-img {
             position: absolute;
+            z-index: -1;
             top: 0;
             left: 0;
-            background-color: $cl-white;
             height: 100%;
             width: 100%;
-            transition: opacity 0.3s;
+            background: url("../img/pictures/desk.webp") right / cover;
         }
-
         .icon {
-            position: relative;
-            width: 6rem;
+            width: 50px;
         }
-
         h4 {
-            position: relative;
             font-size: 2.2rem;
-        }
-
-        ul {
-            position: relative;
         }
     }
 }

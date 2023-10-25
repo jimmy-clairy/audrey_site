@@ -6,9 +6,10 @@
 	}
 
 	img {
-		width: 10rem;
-		height: 10rem;
+		width: clamp(10rem, 10vw,13rem);
+		height: clamp(10rem, 10vw,13rem);
 		float: left;
+		margin-top: 0.5rem;
 		margin-right: 2rem;
 		border-radius: 1rem;
 	}
@@ -18,12 +19,16 @@
 	background: $gradient;
 	padding: 2rem 1rem;
 	color: $cl-white;
+	text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 	border-radius: 5px;
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 .parcours {
-	min-width: 400px;
+	@include laptop {
+		min-width: 400px;
+	}
+
 	div {
 		padding: 2.5rem 0;
 		border-bottom: 2px solid rgba(0, 0, 0, 0.2);

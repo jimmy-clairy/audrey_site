@@ -4,20 +4,19 @@
     align-items: center;
 }
 
-;
+
 
 @mixin mobile-L {
     @media (min-width:500px) {
         @content
-    }
+    };
 }
 
-;
+
 
 @mixin laptop {
     @media (min-width:1000px) {
         @content
-    }
+    };
 }
 
-;

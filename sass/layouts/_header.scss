@@ -17,7 +17,8 @@
     }
 
     &__container {
-        width: 120rem;
+        width: 100%;
+        max-width: 120rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -30,14 +31,13 @@
 }
 
 .social {
-    width: 16rem;
     display: flex;
+    flex: 1;
     justify-content: space-between;
     align-items: center;
-
-    @include mobile-L {
-        width: 20rem;
-    }
+    justify-content: space-between;
+    padding: 0 2rem;
+    max-width: 30rem;
 
     @include laptop {
         margin: auto 5rem auto auto;
